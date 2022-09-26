@@ -7,10 +7,12 @@ ns plugin add @erichlz/nativescript-pseudo-bubble-notification
 ## Usage
 
 this plugin is using only with angular
-
+```Typescript
 import { PseudoBubbleNotification, ETYPE_INIT_POSITION, OptionsNotification } from '@erichlz/nativescript-pseudo-bubble-notification';
 
+```
 
+```Typescript
   baseShowBubble(position, posName) {
     PseudoBubbleNotification.showBubbleFloating({
       image: '~/plugin-demos/hause.png',
@@ -21,6 +23,9 @@ import { PseudoBubbleNotification, ETYPE_INIT_POSITION, OptionsNotification } fr
       position: position
     });
   }
+```
+
+```Typescript
 
   BubbleWhitSpecificPosition(){
     PseudoBubbleNotification.showBubbleFloating({
@@ -33,7 +38,9 @@ import { PseudoBubbleNotification, ETYPE_INIT_POSITION, OptionsNotification } fr
       positionY: 140
     });
   }
+```
 
+```Typescript
   BubbleWhitNotification(){
     const options:OptionsNotification = {
       channelId: 'Chanel01',
@@ -51,7 +58,7 @@ import { PseudoBubbleNotification, ETYPE_INIT_POSITION, OptionsNotification } fr
 
     PseudoBubbleNotification.showNotification(options)
   }
-
+```
   the priorities you can use are as follows:
 
   * DEFAULT
@@ -62,17 +69,18 @@ import { PseudoBubbleNotification, ETYPE_INIT_POSITION, OptionsNotification } fr
 Which are in the enum ETYPE_PRIORITY
 
 The Position initial you can use are as follows
-  TOP_CENTER,
-  TOP_LEFT,
-  TOP_RIGTH,
-  MIDDLE_CENTER,
-  MIDDLE_LEFT,
-  MIDDLE_RIGTH,
-  BOTTOM_CENTER,
-  BOTTOM_LEFT,
-  BOTTOM_RIGTH
+  * TOP_CENTER,
+  * TOP_LEFT,
+  * TOP_RIGTH,
+  * MIDDLE_CENTER,
+  * MIDDLE_LEFT,
+  * MIDDLE_RIGTH,
+  * BOTTOM_CENTER,
+  * BOTTOM_LEFT,
+  * BOTTOM_RIGTH
 Which are in the enum ETYPE_INIT_POSITION
 
+```Typescript
 interface OptionsBubble {
   image: string;
   onTap: Function;
@@ -92,7 +100,7 @@ interface OptionsNotification {
   colorSmallIcon?: number;
   optionBubble: OptionsBubble;
 }
-
+```
 
 ## License
 
