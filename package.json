@@ -1,0 +1,33 @@
+{
+  "name": "@erichlz/nativescript-pseudo-bubble-notification",
+  "version": "1.0.0",
+  "description": "It's a nativescript plugin, that generate an pseudo bubble notification only into app",
+  "main": "index",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "6.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "erich2020.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "TypeScript",
+    "Android"
+  ],
+  "author": {
+    "name": "erichlz",
+    "email": "oss@nativescript.org"
+  },
+  "bugs": {
+    "url": "https://github.com/Erich2020/"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Erich2020",
+  "readmeFilename": "README.md",
+  "bootstrapper": "@nativescript/plugin-seed"
+}

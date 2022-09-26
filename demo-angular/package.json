@@ -1,0 +1,11 @@
+{
+  "main": "./src/main.ts",
+  "dependencies": {
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@erichlz/nativescript-pseudo-bubble-notification": "file:../../dist/packages/nativescript-pseudo-bubble-notification"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.3.0",
+    "@nativescript/ios": "~8.3.0"
+  }
+}
